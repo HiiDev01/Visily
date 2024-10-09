@@ -1,0 +1,251 @@
+.landingpage{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-three);
+  padding: 10px 20px;
+  user-select: none;
+}
+.content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 6% 7%;
+}
+.content_txt{
+  flex: 1;
+  width: 60%;
+}
+.content_txt h1{
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-family: var(--font-two);
+  text-transform: capitalize;
+  line-height: 1.2;
+  color: var(--cg-three);
+  margin: 0px 0px 15px 0px;
+}
+.content_txt .paraOne{
+  width: 80%;
+  font-size: 1rem;
+  font-family: var(--font-three);
+  color: var(--cg-three);
+  word-spacing: 1px;
+  margin: 0px 0px 15px 0px;
+  line-height: 1.4;
+}
+.content_txt a{
+  display: inline-block;
+  background-color: var(--cg-three);
+  padding: 10px 30px;
+  font-size: 1rem;
+  color: var(--fg-one);
+  font-family: var(--font-three);
+  font-weight: 500;
+  font-style: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0px 0px 10px 0px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.content_txt a:hover{
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.landicon_con{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+.landicon_wrap{
+  display: flex;
+  align-items: center;
+}
+.landicon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0px 0px 0px -5px;
+  box-shadow: 0px 0px 2px var(--dg-two);
+}
+#landicon1{
+  background-image: url(../assets/illus1-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#landicon2{
+  background-image: url(../assets/illus2-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#landicon3{
+  background-image: url(../assets/illus3-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#landicon4{
+  background-image: url(../assets/illus4-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.landiconpara{
+  font-size: 0.9rem;
+  color: var(--dg-one);
+  font-family: var(--font-three);
+  font-weight: 400;
+}
+
+
+
+.content_vid{
+  position: relative;
+  background-color: var(--fg-one);
+}
+.vid_content_con{
+  position: absolute;
+  top: -28%;
+  right: -10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background-color: var(--fg-one);
+  box-shadow: 0px 0px 5px var(--dg-one);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.vid_con_img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.vid_text_con{
+  width: auto;
+}
+.vid_text_con h4{
+  font-size: 0.9rem;
+  font-family: var(--font-three);
+  text-transform: capitalize;
+  color: var(--dg-two);
+  font-weight: 600;
+  line-height: 1;
+}
+.vid_text_con p{
+  font-size: 0.8rem;
+  font-family: var(--font-three);
+  color: var(--dg-two);
+  font-weight: 400;
+}
+
+.video_con{
+  max-width: 450px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+.video_con video{
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 10px;
+}
+.video_con::before{
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 100px;
+  background-color: var(--cg-three);
+  border-radius: 10px;
+  top: -5%;
+  left: -3.5%;
+  z-index: -1;
+}
+.video_con::after{
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 100px;
+  background-color: var(--cg-three);
+  border-radius: 10px;
+  bottom: -3%;
+  right: -3%;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    padding: 8% 2%;
+    gap: 100px;
+  }
+
+  .content_txt {
+    width: 100%;
+    border: none;
+  }
+
+  .content_txt h1 {
+    font-size: 3rem;
+  }
+
+  .content_txt .paraOne {
+    font-size: 0.9rem;
+  }
+
+  .content_txt a {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .landicon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .landiconpara {
+    font-size: 0.8rem;
+  }
+
+  .vid_text_con h4 {
+    font-size: 0.8rem;
+  }
+
+  .vid_text_con p {
+    font-size: 0.7rem;
+  }
+
+  .video_con {
+    max-width: 100%;
+  }
+  .vid_content_con{
+    right: -2%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .landingpage {
+    padding: 0px;
+  }
+
+  .content {
+    gap: 100px;
+  }
+
+  .content_txt h1 {
+    font-size: 2.5rem;
+  }
+
+  .content_txt .paraOne {
+    font-size: 0.85rem;
+  }
+}
